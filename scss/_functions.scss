@@ -94,6 +94,12 @@
   @return map-get($grays, $key);
 }
 
+// Retrieve spacer Sass map
+@function spacer($key) {
+  @return map-get($spacers, $key);
+}
+
+
 // Request a theme color level
 @function theme-color-level($color-name: "primary", $level: 0) {
   $color: theme-color($color-name);
